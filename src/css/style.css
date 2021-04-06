@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.page {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.main {
+  position: fixed;
+  width: 350px;
+  height: 100vh;
+  background-color: #121018;
+  color: #F4F5F6;
+  -webkit-box-shadow: 0 0 24px #0a0b0c;
+          box-shadow: 0 0 24px #0a0b0c;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hd-av {
+  height: auto;
+}
+
+.header-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 320px;
+          flex: 0 1 320px;
+  overflow: hidden;
+  height: 200px !important;
+  position: relative;
+}
+
+.header-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 150px;
+          flex: 0 1 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  -webkit-transform: translateY(70%);
+          transform: translateY(70%);
+  border: 3px double #fff;
+}
+
+.header-avatar img {
+  height: 150px;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
+.main-info {
+  position: relative;
+  margin-top: 80px;
+}
+
+.main-info .site-title {
+  font-family: "PT Sans";
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-info .site-description {
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #afcfe6;
+}
+
+.social-icons {
+  position: relative;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-icons .social-icons-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  margin: 1rem 0.5rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.site-detals {
+  position: relative;
+  margin: 0 1.5rem;
+}
+
+.site-detals .my-text {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.2rem;
+}
+
+.contact-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+.contact-me div > button {
+  margin: 0 5px;
+  padding: 12px 35px;
+  border: none;
+  color: #F4F5F6;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 25px;
+}
+
+.contact-me .view-porfolio button {
+  background-color: #ff4444;
+}
+
+.contact-me .view-porfolio button:hover {
+  background-color: #ff6464;
+  -webkit-box-shadow: 0 0 10px #fc9b9b;
+          box-shadow: 0 0 10px #fc9b9b;
+}
+
+.contact-me .write-to-me button {
+  background-color: #4444ff;
+}
+
+.contact-me .write-to-me button:hover {
+  background-color: #6464ff;
+  -webkit-box-shadow: 0 0 10px #8484ff;
+          box-shadow: 0 0 10px #8484ff;
+}
+
+.content {
+  position: relative;
+  width: 70vw;
+  margin-left: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background-color: #1e262c;
+  color: #F4F5F6;
+  font-family: "Open Sans";
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 2.3rem;
+}
+
+.nav-menu {
+  position: fixed;
+  padding: 0.5rem 0;
+  width: 100%;
+  background-color: #0a0b0c;
+  color: #F4F5F6;
+  -webkit-box-shadow: 0 0 15px #1F2722;
+          box-shadow: 0 0 15px #1F2722;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-menu ul {
+  list-style: none;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #afcfe6;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 1.5rem;
+}
+
+.nav li {
+  padding-left: 1.5rem;
+}
+
+.nav li a {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nav li a:hover {
+  color: #F4F5F6;
+  background-color: #121018;
+}
+
+.wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.stories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.story-card {
+  max-width: 18rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 150px;
+          flex: 0 1 150px;
+}
+/*# sourceMappingURL=style.css.map */
