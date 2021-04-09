@@ -18,6 +18,7 @@ $font-p: 'Open Sans';
 
 body {
     overflow-x: hidden;
+    font-family: $font-p;
 }
 
 //@import "main.scss";
@@ -140,7 +141,7 @@ body {
         color: $color-l;
         transition: all 0.5s;
         border-radius: 25px;
-        
+        cursor: pointer;
     }
     .view-porfolio {
         button {
@@ -169,7 +170,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    background-color: $color-n;
+    background-color: $color-d;
     color: $color-l;
     font-family: $font-p;
 }
@@ -180,6 +181,7 @@ body {
 }
 .nav-menu {
     position: fixed;
+    z-index: 999;
     padding: 0.5rem 0;
     width: 100%;
     background-color: #0a0b0c;
@@ -216,45 +218,139 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 1rem;
+    //padding: 1rem;
+    width: 100%;
 }
 .stories {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 0;
 }
 .story-card {
     max-width: 18rem;
     flex: 0 1 150px;
     position: relative;
-    .story-card-img {
-        object-fit: cover;
-        object-position: center;
-        background-size: cover;
-        overflow: hidden;
-        flex: 0 1 100px;
-        height: 250px;
-        width: 150px;
-        position: relative;
-        border-radius: 5px;
-        img {
-            max-height: 100%;
-        }
-        .story-card-body {
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 1rem;
-        }
-        &::before {
-            content: '';
-            position: absolute;
-            background-color: #00000050;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+    a {
+        text-decoration: none;
+        color: $color-l;
+        .story-card-img {
+            object-fit: cover;
+            object-position: center;
+            background-size: cover;
+            overflow: hidden;
+            flex: 0 1 100px;
+            height: 250px;
+            width: 150px;
+            position: relative;
+            border-radius: 5px;
+            img {
+                max-height: 100%;
+            }
+            .story-card-body {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 1rem;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                p {
+                    align-items: flex-end;
+                    height: 70%;
+                }
+                span {
+                    text-align: end;
+                    align-items: flex-end;
+                }
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: #00000050;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transition: background-color 0.5s;
+            }
+            &:hover::before {
+                background-color: #74747450;
+            }
         }
     }
-    
+}
+.form-text {
+    margin: 1rem 0;
+    display: flex;
+    position: relative;
+    .text {
+        height: 60px;
+        width: 100%;
+        background-color: $color-dd;
+        color: $color-l;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px $color-dd;
+        &::placeholder {
+            color: $color-s;
+            padding: 0 1rem;
+            font-size: 16px;
+        }
+    }
+    .btn {
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        border: none;
+        color: $color-l;
+    }
+    .btn-send {
+        top: 10px;
+        bottom: 0;
+        right: 10px;
+        background-color: $color-n;
+    }
+    .btn-photo {
+        top: 10px;
+        right: 50px;
+        background-color: $color-m;
+    }
+}
+.news {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    .news-card {
+        background-color: $color-n;
+        border-radius: 5px;
+        margin: 1rem 0;
+        width: 700px;
+        transition: box-shadow 0.5s;
+        a {
+            width: 100%;
+            text-decoration: none;
+            .news-card-img {
+                display: flex;
+                flex: 0 1 700px;
+                overflow: hidden;
+                border-radius: 5px 5px 0 0;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .news-card-body {
+                padding: 1rem;
+                p {
+                    font-size: 14px;
+                }
+                span {
+                    color: $color-s;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
