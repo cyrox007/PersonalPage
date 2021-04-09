@@ -1,0 +1,60 @@
+.stories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.story-card {
+    max-width: 18rem;
+    flex: 0 1 150px;
+    position: relative;
+    a {
+        text-decoration: none;
+        color: $color-l;
+        .story-card-img {
+            object-fit: cover;
+            object-position: center;
+            background-size: cover;
+            overflow: hidden;
+            flex: 0 1 100px;
+            height: 250px;
+            width: 150px;
+            position: relative;
+            border-radius: 5px;
+            img {
+                max-height: 100%;
+            }
+            .story-card-body {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 1rem;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                p {
+                    align-items: flex-end;
+                    height: 70%;
+                }
+                span {
+                    text-align: end;
+                    align-items: flex-end;
+                }
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: #00000050;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transition: background-color 0.5s;
+            }
+            &:hover::before {
+                background-color: #74747450;
+            }
+        }
+    }
+}

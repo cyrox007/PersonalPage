@@ -1,0 +1,36 @@
+.nav-menu {
+    position: fixed;
+    z-index: 999;
+    padding: 0.5rem 0;
+    width: 100%;
+    background-color: #0a0b0c;
+    color: $color-l;
+    box-shadow: 0 0 15px #000;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    z-index: 9;
+    ul {
+        list-style: none;
+        li a {
+            text-decoration: none;
+            color: $color-s;
+        }
+    }
+}
+.nav {
+    display: flex;
+    margin: 0 1.5rem;
+    li {
+        padding-left: 1.5rem;
+        a {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            transition: all 0.5s;
+            &:hover {
+                color: $color-l;
+                background-color: $color-d;
+            }
+        }
+    }
+}
