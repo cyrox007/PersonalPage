@@ -44,7 +44,7 @@ body {
 }
 .content {
     position: relative;
-    width: 70vw;
+    width: 60vw;
     margin-left: 350px;
     height: 100%;
     display: flex;
@@ -63,6 +63,7 @@ body {
     width: 100%;
     display: flex;
     margin: 2.3rem auto 0 auto;
+    flex-direction: column;
     //margin-top: 2.3rem;
     @media screen and (max-width: 1178px) {
         margin: 2.3rem 0 0 0;
@@ -72,13 +73,6 @@ body {
     } 
 }
 @import "navigation.scss";
-.wraper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    //padding: 1rem;
-    width: 100%;
-}
 @import "stories.scss";
 @import "form.scss";
 @import "news.scss";
