@@ -16,6 +16,34 @@ $color-dd: #0a0b0c;
 $font-h: 'PT Sans';
 $font-p: 'Open Sans';
 
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #505050;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #1d1d1d;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  ::-webkit-resizer {
+    background-image: url("");
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 0px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
 body {
     overflow-x: hidden;
     font-family: $font-p;
